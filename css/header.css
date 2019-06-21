@@ -1,0 +1,112 @@
+/* HEADER */
+.inner
+{
+	overflow-x: visible !important;
+}
+.page_content_wrapper
+{
+	overflow: visible !important;
+}
+.elemContainment > div:first-child
+{
+    top: -50px;
+    left: 0;
+    overflow: visible !important;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
+    position: absolute;
+    margin-left: 75px;
+    margin-right: 175px;
+    z-index: 993;
+}
+.elemContainment > div:first-child #html_snippet
+{
+    overflow: visible !important;
+    border-bottom: none;
+}
+.elemContainment > div:first-child .zc-pb-tile-card
+{
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    background: transparent !important;
+}
+.elemContainment > div:first-child .zc-pb-tile-card:hover
+{
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+.bgd-header
+{
+}
+.bgd-nav
+{
+    height: 50px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bgd-nav_left i
+{
+    vertical-align: middle;
+}
+.bgd-nav .bgd-nav-space
+{
+    margin-left: 10px;
+}
+.bgd-nav .bgd-right-space
+{
+    margin-right: 10px;
+}
+.bgd-icon-button
+{
+    padding: 10px 10px !important;
+    min-width: 0 !important;
+    line-height: 8px !important;
+}
+.bgd-back-button
+{
+    padding: 0px 10px !important;
+    line-height: 34px !important;
+}
+
+/* CUSTOM FILTER */
+div[formlinkname="filters"] .form-header
+{
+    /* display: none !important;
+    */;
+}
+
+/* ACCORDION */
+.bgd-header [type=checkbox]
+{
+    display: none;
+}
+.accordion-content
+{
+    top: 51px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    -webkit-transition: height .35s;
+    -o-transition: height .35s;
+    transition: height .35s;
+    -webkit-transition: width .35s;
+    -o-transition: width .35s;
+    transition: width .35s;
+    box-shadow: 0 10px 10px 0 rgba(130,145,153,0.5) !important;
+    background: white;
+}
+.bgd-header input:checked ~ .accordion-content
+{
+    height: calc(100vh - 53px);
+    right: -175px;
+    width: 300px;
+}
